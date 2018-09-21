@@ -90,8 +90,8 @@ for i,p in enumerate(multiset_permutations(a)):
 	inputs[i,0] = 1
 
 targets = np.array([[0,0,0],[0,0,1],[0,1,0],[0,1,1],[1,0,0],[1,0,1],[1,1,0],[1,1,1]])
-weights_1 = -1+2*np.random.rand(5,9)
-weights_2 = -1+2*np.random.rand(3,6)
+weights_1 = -1+2*np.random.rand(hidden_layer_nodes,9)
+weights_2 = -1+2*np.random.rand(3,hidden_layer_nodes+1)
 
 # print(weights_2[:,0])
 
